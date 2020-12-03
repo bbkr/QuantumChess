@@ -14,7 +14,8 @@ So I wanted to create something fresh. Brain melting. That will restore imaginat
 
 ### Superposition
 
-Every piece starts in superposition state marked as 🟊. It means that piece is everything at the same time - ♚, ♛, ♝, ♞, ♜ and ♟︎.
+Every piece starts in superposition state marked as 🟊.
+It means that piece is everything at the same time - ♚, ♛, ♝, ♞, ♜ and ♟︎.
 
 ![Starting position](/positions/start.png)
 
