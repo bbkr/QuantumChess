@@ -46,6 +46,12 @@ The easiest collapse is this move:
 
 <img src="/positions/rules-collapsing-1.png" width="400">
 
-Piece could be ♚|♛||♜|♝|♞|♟︎ and player decided to move it as a ♞. That means it can no longer become ♚, ♛, ♜, ♝ or ♟︎ because there cannot be "a ♜ that was jumping like knight in the past".
+Piece could be ♚|♛||♜|♝|♞|♟︎ and player decided to move it as a ♞. That means it can no longer become ♚, ♛, ♜, ♝ or ♟︎ because there cannot be "a ♜ that was jumping like ♞ in the past".
 
+Time for something more advanced:
 
+<img src="/positions/rules-collapsing-2.png" width="400">
+
+<img src="/positions/rules-collapsing-3.png" width="400">
+
+Here ♚|♛||♜|♝|♞|♟︎ moved to d6 and only ♛ or ♜ could do that. So this piece lost ability to collapse to ♚, ♝, ♞ or ♟︎ and became ♛|♜. Then it moved to a3 and only ♛ could do that. So that piece lost ability to become ♜ and finally collapsed to only possible state - ♛.
