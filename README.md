@@ -12,9 +12,11 @@ So I wanted to create something fresh. Brain melting. That will restore imaginat
 
 ## Rules
 
-1. Every piece starts in superposition state.
+### Superposition
 
-![Starting position](/positions/start.png | width=100)
+Every piece starts in superposition state marked as 🟊. It means that piece is everything at the same time - ♚, ♛, ♝, ♞, ♜ and ♟︎.
 
-Superposition means that piece is everything at the same time - king, queen, bishop, knight, rook and pawn.
+![Starting position](/positions/start.png)
+
+
 
