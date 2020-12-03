@@ -14,7 +14,7 @@ So I wanted to create something fresh. Brain melting. That will restore imaginat
 
 1. Every piece starts in superposition state.
 
-![Starting position](/positions/start.png)
+![Starting position](/positions/start.png =256x)
 
 Superposition means that piece is everything at the same time - king, queen, bishop, knight, rook and pawn.
 
