@@ -16,15 +16,21 @@ So I wanted to create something fresh. Brain melting. That will restore imaginat
 
 Every piece starts in superposition state marked as 🟊.
 
-It means that piece is everything at the same time - ♚, ♛, ♜, ♝, ♞ and ♟︎. Which will be written as ♚|♛||♜|♝|♞|♟︎ in this document.
+It means that piece is everything at the same time - ♚, ♛, ♜, ♝, ♞ and ♟︎.
 
-<img src="/positions/start.png" width="512">
+Which will be written as ♚|♛||♜|♝|♞|♟︎ in this document.
+
+<img src="/positions/rules_superposition_1.png" width="400">
 
 
 ### Movement
 
-Piece in superposition can move as any piece it can collapse to. So ♝|♜ can move any number of squares along a rank or file or any number of squares diagonally.
-Player can choose which movement method to use during his turn.
+Piece in superposition can move as any piece it can collapse to.
 
+Player must choose which movement method to use during his/her turn.
 
+Here is how white can begin with d2 piece.
 
+<img src="/positions/rules_movement_1.png" width="400">
+
+So ♝|♜ can move any number of squares along a rank/file or any number of squares diagonally.
