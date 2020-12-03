@@ -34,7 +34,7 @@ Player must choose which movement method to use during his/her turn, so here is 
 
 <img src="/positions/rules-movement-1.png" width="400">
 
-For example player may choose to move this piece as a ♞ to b3 or as a ♛ to d6.
+For example player may choose to move this piece as a ♞ to *b3* or as a ♛ to *d6*.
 
 Accordingly ♝|♜ piece can move any number of squares along a rank/file or any number of squares diagonally, but can not move like a ♞.
 
