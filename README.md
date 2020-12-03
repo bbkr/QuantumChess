@@ -20,7 +20,7 @@ It means that piece is everything at the same time - ♚, ♛, ♜, ♝, ♞ and
 
 Which will be written as ♚|♛||♜|♝|♞|♟︎ in this document.
 
-<img src="/positions/rules_superposition_1.png" width="400">
+<img src="/positions/rules-superposition-1.png" width="400">
 
 
 ### Movement
@@ -31,6 +31,6 @@ Player must choose which movement method to use during his/her turn.
 
 Here is how white can begin with d2 piece.
 
-<img src="/positions/rules_movement_1.png" width="400">
+<img src="/positions/rules-movement-1.png" width="400">
 
 So ♝|♜ can move any number of squares along a rank/file or any number of squares diagonally.
