@@ -55,3 +55,12 @@ Time for something more advanced:
 <img src="/positions/rules-collapsing-3.png" width="400">
 
 Here ♚|♛||♜|♝|♞|♟︎ moved to d6 and only ♛ or ♜ could do that. So this piece lost ability to collapse to ♚, ♝, ♞ or ♟︎ and became ♛|♜. Then it moved to a3 and only ♛ could do that. So that piece lost ability to become ♜ and finally collapsed to only possible state - ♛.
+
+More than one piece can collapse during turn:
+
+<img src="/positions/rules-collapsing-4.png" width="400">
+
+<img src="/positions/rules-collapsing-5.png" width="400">
+
+Here player made 3 moves (all shown at once, black moves are skipped to avoid complexity). Each moved piece collapsed to ♛|♝. Also because player can have only one ♛ and two ♝ it implies that other pieces collapsed to ♚||♜|♞|♟︎ - every moved pieces must became ♛ or ♝ so those possibilities are taken. Then after b6 move this piece collapsed to final ♛. That takes away possibility of becoming ♛ for d4 and d5 pieces - they have no other option than to collapse to ♝.
+
