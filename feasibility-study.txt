@@ -53,7 +53,7 @@ p5=king|queen|bishop
 king(1)+queen(1)+rook(2)+bishop(2)=6, 6 allowed > 5 collapsed pieces. OK so far.
 Next piece moved one square diagonally back.
 p6=king|queen|bishop
-king(1)+queen(1)+rook(2)+bishop(2)=6, 6 allowed > 5 collapsed pieces. Collapse must happen. Why?
+king(1)+queen(1)+rook(2)+bishop(2)=6, 6 allowed = 6 collapsed pieces. Collapse must happen. Why?
 
 p1=queen|rook
 p2=queen|rook
@@ -133,3 +133,12 @@ p6=ERROR
 
 So removing option that causes error does not guarantee remaining superspositions to be possible to collapse.
 
+Is formula from 1.8 correct? 
+
+king(1)+queen(1)+rook(2)+bishop(2)=6, 6 allowed = 6 collapsed pieces.
+
+Left side can never be increased. Other pieces must collapse to knight|pawn.
+So in reality this is 
+king(1)+queen(1)+rook(2)+bishop(2)+knight(2)+pawn(8)=16, 16 allowed = 16 collapsed pieces.
+
+It goes nowhere from here and does not solve basic conflict.
