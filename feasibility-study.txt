@@ -15,7 +15,7 @@ Example 2:
 Piece p1=king|queen|rook|bishop|knight|pawn moved three squares up. Only queen and rook can do it so this piece collapses to queen|rook. The same piece moved one square diagonally. From queen|rook only queen can do it so this piece collapses to its final state - queen.
 
 1.8. Sum of different states in collapsed or partially collapsed pieces multiplied by maximum amount 
-of corresponding types pieces cannot be greater or equal to total amount of collapsed or partially collapsed pieces. 
+of corresponding types pieces cannot be less or equal to total amount of collapsed or partially collapsed pieces. 
 
 Example 3:
 Collapse in Example 2 led to state: p1=queen.
@@ -39,4 +39,44 @@ Possible final collapses are: queen * 1, bishop bishop * 2.
 That means no other piece can become queen or bishop and must collapose to *=king|rook|knight|pawn.
 Now p1 moves one square up. From queen|bishop only queen can do it so p1 collapses to queen.
 That means p2 ans p3 cannot become queen and collapse to bishops.
+
+Example 5:
+Two pieces moves three squares up and became
+p1=queen|rook
+p2=queen|rook
+Two pieces moved two squares diagonally and became
+p3=queen|bishop
+p4=queen|bishop
+So far no collapse is happening because queen(1) + rook(2) + bishop(2) = 5, which is higher than 4 collapsed pieces. So every piece can collapse safely without breaking rule 1.4. For example p1=queen, p2=rook, p3=bishop, p4=bishop. Or p1=rook, p2=rook, p3=bishop, p4=queen.
+Now one piece moved one square diagonally and collapsed to
+p5=king|queen|bishop
+king(1)+queen(1)+rook(2)+bishop(2)=6, 6 allowed > 5 collapsed pieces. OK so far.
+Next piece moved one square diagonally.
+p6=king|queen|bishop
+king(1)+queen(1)+rook(2)+bishop(2)=6, 6 allowed > 5 collapsed pieces. Collapse must happen. Why?
+
+p1=queen|rook
+p2=queen|rook
+p3=queen|bishop
+p4=queen|bishop
+p5=king|queen|bishop
+p6=king|queen|bishop
+
+When p6 moves two squares up everything collapses properly:
+p6=queen
+p1=rook (already 1 queen present)
+p2=rook (already 1 queen present)
+p3=bishop (already 1 queen present)
+p4=bishop (already 1 queen present)
+p5=king (already 1 queen and 2 bishops present)
+
+But when p1 moves one square diagonally everything collapses to:
+p1=queen
+p2=rook (already 1 queen present)
+p3=bishop (already 1 queen present)
+p4=bishop (already 1 queen present)
+p5=king (already 1 queen and 2 bishops present)
+p6=ERROR  (already 1 king, 1 queen and 2 bishops present)
+
+So how this collapse should be executed?
 
