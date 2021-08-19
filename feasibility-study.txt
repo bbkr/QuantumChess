@@ -48,10 +48,10 @@ Two pieces moved two squares diagonally and became
 p3=queen|bishop
 p4=queen|bishop
 So far no collapse is happening because queen(1) + rook(2) + bishop(2) = 5, which is higher than 4 collapsed pieces. So every piece can collapse safely without breaking rule 1.4. For example p1=queen, p2=rook, p3=bishop, p4=bishop. Or p1=rook, p2=rook, p3=bishop, p4=queen.
-Now one piece moved one square diagonally and collapsed to
+Now one piece moved one square diagonally back and collapsed to
 p5=king|queen|bishop
 king(1)+queen(1)+rook(2)+bishop(2)=6, 6 allowed > 5 collapsed pieces. OK so far.
-Next piece moved one square diagonally.
+Next piece moved one square diagonally back.
 p6=king|queen|bishop
 king(1)+queen(1)+rook(2)+bishop(2)=6, 6 allowed > 5 collapsed pieces. Collapse must happen. Why?
 
@@ -79,4 +79,57 @@ p5=king (already 1 queen and 2 bishops present)
 p6=ERROR  (already 1 king, 1 queen and 2 bishops present)
 
 So how this collapse should be executed?
+
+We already know p1 cannot collapse to queen.
+Does removing that option solves the issue?
+
+p1=rook
+p2=rook
+p3=queen|bishop
+p4=queen|bishop
+p5=king|queen|bishop
+p6=king|queen|bishop
+
+king(1)+queen(1)+rook(2)+bishop(2)=6, 6 allowed = 6 collapsed pieces. Further collapse must happen? This looks stable:
+
+p1=rook
+p2=rook
+p3=queen|bishop
+p4=queen|bishop
+p5=king|queen|bishop
+p6=king|queen|bishop
+
+Can collapse to
+
+p1=rook
+p2=rook
+p3=queen
+p4=bishop
+p5=king|bishop
+p6=king|bishop
+
+But not so stable
+
+p1=rook
+p2=rook
+p3=queen|bishop
+p4=queen|bishop
+p5=king|queen # moved 1 square up
+p6=king|queen|bishop
+
+p1=rook
+p2=rook
+p3=queen|bishop
+p4=queen|bishop
+p5=king|queen # moved 1 square up
+p6=king|queen
+
+p1=rook
+p2=rook
+p3=queen # moved 2 squares up
+p4=bishop
+p5=king
+p6=ERROR
+
+So removing option that causes error does not guarantee remaining superspositions to be possible to collapse.
 
